@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up
+    </title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+   
+    <div id="preloader">
+        <div class="loader"></div>
+
+
+    </div>
+    
+    
+
+
+    <div class="main-box">
+
+      
+
+
+
+        <div class="bg-img1">
+            <img id="imgcontainer" src ="./images/wallpaperflare.com_wallpaper.jpg" alt="Random image">
+
+            <div class="overlay-text" ><img src="./images/all white logo.png" ></div>
+
+
+            <div class="overlay-text2">Capturing  Moment,<br>Creating  Memories</div>
+            <div class="buttons">
+                <span class="bar" onclick="chagrimg1()"></span>
+                <span class="bar" onclick="chagrimg2()"></span>
+                <span class="bar" onclick="chagrimg3()"></span>
+            </div>
+
+
+            <div class="overlay-text3"> <a href="">Back to website</a></div>
+
+        </div>
+
+        <div class="account" style=" display: flex; justify-content: right;">
+            <h2>Create an account</h2>
+            
+
+            
+        </div>
+
+        <div class="account2" style=" display: flex; justify-content: right;">
+            <p>Already have an account? <a href="" style="color: rgb(128, 52, 226);">Log in</a></p>
+            
+
+            
+        </div>
+
+
+        <div class="form1">
+            <form>
+                <label for="Firstname"  ></label>
+                <input type="text" id="Firstname" placeholder="First Name" required>
+                
+                <label for="Lastname"></label>
+                <input type="text" id="Lastname" placeholder="Last name" required>
+                <br>
+
+                <label for="Email" ></label>
+                <input type="email" id="Email" placeholder="Email" required>
+                <br>
+
+
+                <label for="Password" ></label>
+                <input type="password" id="Email" placeholder="Enter your password" required><br>
+
+                <label>
+                    <input type="checkbox" name="Terms and condition" value="agree" required>
+                    I agree to the <a href="">Terms & conditions</a>
+                </label>
+
+                <input type="submit" value="Create account">
+
+                
+               <div  class="google">
+                 <button type="Submit" value="Google" class="social">Google</button>
+                <button type="submit" value="GitHub" class="social">Github</button>
+            </div>
+
+                
+            </form>
+        </div>
+    
+    </div>
+</body>
+
+
+<script>
+
+
+function chagrimg1(){
+    let img=document.getElementById("imgcontainer")
+    // console.log(img);
+    img.setAttribute("src","./images/wallpaperflare.com_wallpaper.jpg")
+    
+}
+function chagrimg2(){
+    let img=document.getElementById("imgcontainer")
+    // console.log(img);
+    img.setAttribute("src","./images/wallpaperflare.com_wallpaper (1).jpg")
+    
+}
+function chagrimg3(){
+    let img=document.getElementById("imgcontainer")
+    // console.log(img);
+    img.setAttribute("src","./images/wallpaperflare.com_wallpaper (2).jpg")
+    
+}
+
+setTimeout(()=>{
+    
+    var loader= document.getElementById("preloader");
+    // window.addEventListener("load", function(){
+        // loader.classList.toggle("hidden");
+        loader.style= "position:absolute; top:-100%;"
+    // });
+    
+},2000)
+
+
+
+// window.addEventListener("load", function() {
+//             setTimeout(function() {
+//                 document.getElementById("preloader").classList.add('hidden');
+//             }, 3000);
+//         });
+
+
+</script>
+
+
+
+
+
+
+</html>
